@@ -1,41 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-
-    <style type="css">
-        body {
-    background: black;
-}
-
-.clock {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    color: #fff;
-    font-size: 140px;
-    font-family: ;
-    letter-spacing: 7px;
-}
-</style>
-
-    <script>
-        function showTime() {
-            var date = new Date();
-            var h = date.getHours(); // 0 - 23
-            var m = date.getMinutes(); // 0 - 59
-            var s = date.getSeconds(); // 0 - 59
-
-            var time = h + ":" + m;
-            document.getElementById("MyClockDisplay").innerText = time;
-            document.getElementById("MyClockDisplay").textContent = time;
-
-            setTimeout(showTime, 10000);
-
-        }
-
-        showTime();
-    </script>
+    <link rel="preload" href="script.js" as="script" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
