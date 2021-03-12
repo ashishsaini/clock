@@ -17,7 +17,6 @@ function showTime(){
     document.getElementById("MyClockDisplay").textContent = time;
     
     setTimeout(showTime, 60000);
-    location.reload();
     
 }
 
