@@ -5,7 +5,7 @@ function addZero(i) {
   return i;
 }
 
-function showTime(){
+const interval = setInterval(function() {
     var date = new Date();
     var h = addZero(date.getHours()); // 0 - 23
     var m = addZero(date.getMinutes()); // 0 - 59
@@ -15,9 +15,5 @@ function showTime(){
     var time = h + ":" + m ;
     document.getElementById("MyClockDisplay").innerText = time;
     document.getElementById("MyClockDisplay").textContent = time;
-    
-    setTimeout(showTime, 60000);
-    
-}
+ }, 5000);
 
-showTime();
