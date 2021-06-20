@@ -1,4 +1,4 @@
 import time
 
-print("this is a file with syntax error")
-error
+print("this is a file with no syntax error")
+
